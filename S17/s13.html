@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- ************************************************************************ -->
+    <link type="text/css" rel="stylesheet" href="css/index/index.css">
+    <title>Tareas JS</title>
+</head>
+<body>
+    <h1>Tareas JS</h1>
+<nav class="container col-12">
+        <section class="box">
+            
+            <ul>
+                <li>
+                    <a href="s12.html">Sesión 12</a>
+                </li>
+                <li>
+                    <a href="s13.html">Sesión 13</a>
+                </li>
+                <li>
+                    <a href="s15.html">Sesión 15</a>
+                </li>
+                <li>
+                    <a href="s16.html">Sesión 16</a>
+                </li>
+        </section>
+</nav>
+<main class="container">
+    <article class="row">
+        <section class="col-12 border border-2 text-center" >
+            <h2 class="text-sm-start">Ejercicio 1</h2>
+            <p>Ingresa dos números y obtén la suma y producto.</p>
+        <section class="input">
+            <label>Número 1:</label>
+            <input type="number" class="sumx" id="n1">
+        </section>
+        <section class="input">
+            <label>Número 2:</label>
+            <input type="number" class="sumx" id="n2">
+        </section>
+        <p class="resultado" id="p_sumx"></p>
+        <button id="btn_sumx">Respuesta</button>
+        </section>
+    </article>
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+        <h2 class="text-sm-start">Ejercicio 2</h2>
+        <p>Ingresa un número entero y obtén el 20%.</p>
+        <section class="input">
+            <label>Ingresa un número:</label>
+            <input type="number" class="porcent" id="n3">
+        </section>
+        <p class="resultado" id="p_porcent"></p>
+        <button id="btn_porcent">Respuesta</button>
+        </section>
+    </article>
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+            <h2 class="text-sm-start">Ejercicio 3</h2>
+            <p>Ingresa un valor en metros y obtén su valor en cm y mm.</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="mts" id="n4">
+            </section>
+            <p class="resultado" id="p_cmm"></p>
+            <button id="btn_cmm">Respuesta</button>
+        </section>
+    </article>
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+            <h2 class="text-sm-start">Ejercicio 4</h2>
+            <p>Área de un triángulo.</p>
+            <section class="input">
+                <label>Base:</label>
+                <input type="number" class="base" id="base">
+            </section>
+            <section class="input">
+                <label>Altura:</label>
+                <input type="number" class="altura" id="altura">
+            </section>
+            <p class="resultado" id="p_area"></p>
+            <button id="btn_area">Respuesta</button>
+        </section>
+    </article>    
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+            <h2 class="text-sm-start">Ejercicio 5</h2>
+            <p>Ingresa un valor en dólares, luego mostrar su equivalente en soles.</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="dollars" id="dollars">
+            </section>
+            <p class="resultado" id="p_soles"></p>
+            <button id="btn_soles">Respuesta</button>
+        </section>
+    </article>
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+            <h2 class="text-sm-start">Ejercicio 6</h2>
+            <p>Leer una medida en pulgadas e imprimir su equivalente en milímetros (25.4 mm = 1 pulgada).</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="pulgadas" id="pulgadas">
+            </section>
+            <p class="resultado" id="p_mm"></p>
+            <button id="btn_mm">Respuesta</button>
+        </section>
+    </article>
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+            <h2 class="text-sm-start">Ejercicio 7</h2>
+            <p>Ingresa un número de 3 cifras y obtén la suma de sus cifras elevado al cuadrado.</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="cifras" id="cifras" maxlength="3"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </section>
+            <p class="resultado" id="p_cifras"></p>
+            <button id="btn_cifras">Respuesta</button>
+        </section>
+    </article> 
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+            <h2 class="text-sm-start">Ejercicio 8</h2>
+            <p>Se debe ingresar un monto de dinero, luego mostrar cuánto le toca a cada socio: 
+                Socio Porcentaje 
+                A) 30% 
+                B) 20% 
+                C) 50% 
+                </p>
+            <section class="input">
+                <label>Ingresa un monto:</label>
+                <input type="number" class="dinero" id="dinero">
+            </section>
+            <p class="resultado" id="p_d_percent"></p>
+            <button id="btn_d_percent">Respuesta</button>
+        </section>
+    </article>
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+            <h2 class="text-sm-start">Ejercicio 9</h2>
+            <p>Ingresa el precio base de un producto y obtén su IGV y precio final.</p>
+            <section class="input">
+                <label>Ingresa el precio base:</label>
+                <input type="number" class="precio" id="p_base">
+            </section>
+            <p class="resultado" id="p_p_final"></p>
+            <button id="btn_p_final">Respuesta</button>
+        </section>
+    </article>
+    <article class="row">
+        <section class="col-12 border border-2 text-center">
+            <h2 class="text-sm-start">Ejercicio 10</h2>
+            <p>Ingrese la cantidad de entradas vendidas por cada tipo.</p>
+            <section class="input">
+                <label>Entradas generales:</label>
+                <input type="number" class="eg" id="eg">
+            </section>
+            <section class="input">
+                <label>Entradas para mayores de 65:</label>
+                <input type="number" class="em65" id="em65">
+            </section>
+            <section class="input">
+                <label>Entradas para menores:</label>
+                <input type="number" class="em" id="em">
+            </section>
+            <p class="resultado" id="p_entradas"></p>
+            <button id="btn_entradas">Respuesta</button>
+        </section>
+    </article>               
+</main>
+</body>
+</html>
+<script src="js/s13/s13.js"></script>
